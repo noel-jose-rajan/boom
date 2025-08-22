@@ -1,0 +1,87 @@
+# Mini Figma-Style Vector Renderer
+
+A tiny, open‑source vector graphics playground inspired by Figma. Built with **HTML5 Canvas 2D**, plain **JavaScript**, and zero dependencies. It demonstrates the basics of a retained‑mode scene graph, pan/zoom camera, selection, and simple shape editing.
+
+![screenshot](https://dummyimage.com/600x300/222/eee&text=Mini+Vector+Renderer)
+
+---
+
+## ✨ Features
+
+- Draw **rectangles** and **ellipses** with fill, stroke, and rounded corners
+- **Pan** (hold `Space` + drag), **zoom** (mouse wheel), **select & drag**, **delete**
+- Real‑time redraw with dirty flag for efficiency
+- World ↔ screen coordinate transforms
+- Background grid + axis helpers
+- Minimal UI toolbar
+
+---
+
+## 🚀 Quick Start
+
+### Run locally
+
+1. Clone this repo:
+
+   ```bash
+   git clone https://github.com/yourusername/mini-vector-renderer.git
+   cd mini-vector-renderer
+   ```
+
+2. Open `index.html` directly in your browser, or serve via a local HTTP server:
+   ```bash
+   npx serve .
+   ```
+   then visit [http://localhost:3000](http://localhost:3000).
+
+That’s it — no build tools required!
+
+---
+
+## 🛠️ Development
+
+- Pure **HTML + CSS + JS**. No frameworks.
+- Rendering: **Canvas2D** API (could be swapped for WebGL2 later).
+- Layout/UI: Plain CSS with a floating toolbar.
+
+Folder structure:
+
+```
+mini-vector-renderer/
+│
+├── index.html   # main app + inline script
+├── README.md    # this file
+```
+
+---
+
+## 🌱 Roadmap Ideas
+
+- Layers panel + z‑order reordering
+- Resize handles & rotation controls
+- Grouping & hierarchical transforms
+- Text rendering with signed distance fields (SDF)
+- Export to PNG or SVG
+- WebGL backend for GPU acceleration
+
+---
+
+## 🤝 Contributing
+
+PRs and issues are welcome! Some ways to help:
+
+- Fix bugs or improve code clarity
+- Add new shapes or tools
+- Improve the UI/UX
+
+---
+
+## 📜 License
+
+MIT License. Free for personal and commercial use.
+
+---
+
+### Credits
+
+Inspired by how **Figma** builds its collaborative design tool, but written from scratch as a learning/demo project.
